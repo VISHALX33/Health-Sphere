@@ -26,7 +26,8 @@ const App = () => {
         <Route path='/contact' element={<Contact/>} />
         <Route path='/my-profile' element={<MyProfile/>}/>
         <Route path='/my-appointments' element={<MyAppointment/>} />
-        <Route path='/appointments/:docId' element={<Appointment/>} />
+        {/* <Route path='/appointments/:docId' element={<Appointment/>} /> */}
+        <Route path="/appointment/:docId" element={<Appointment />} />
       </Routes>
        <Footer/>
     </div>
@@ -34,3 +35,11 @@ const App = () => {
 }
 
 export default App
+
+// import InvitationCard from "./components/InvitationCard";
+
+// function App() {
+//   return <InvitationCard />;
+// }
+
+// export default App;
